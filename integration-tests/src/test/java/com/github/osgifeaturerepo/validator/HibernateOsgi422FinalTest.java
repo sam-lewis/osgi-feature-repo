@@ -1,7 +1,7 @@
 package com.github.osgifeaturerepo.validator;
 
 
-public class HibernateUnmanaged422FinalTest extends FeatureValidator {
+public class HibernateOsgi422FinalTest extends FeatureValidator {
 
     @Override
     protected String getMavenArtifact() {
@@ -10,7 +10,7 @@ public class HibernateUnmanaged422FinalTest extends FeatureValidator {
 
     @Override
     protected String getFeatureName() {
-        return "hibernate-unmanaged";
+        return "hibernate-osgi";
     }
 
     @Override

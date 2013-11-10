@@ -1,20 +1,20 @@
 package com.github.osgifeaturerepo.validator;
 
 
-public class HibernateManaged422FinalTest extends FeatureValidator {
+public class Aries100Test extends FeatureValidator {
 
     @Override
     protected String getMavenArtifact() {
-        return "hibernate-feature";
+        return "aries-feature";
     }
 
     @Override
     protected String getFeatureName() {
-        return "hibernate-managed";
+        return "aries";
     }
 
     @Override
     protected String getFeatureVersion() {
-        return "4.2.2.Final";
+        return "1.0.0";
     }
 }

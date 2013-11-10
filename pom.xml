@@ -7,8 +7,9 @@
     <packaging>pom</packaging>
     <name>Feature Repository Parent</name>
     <modules>
-        <module>hibernate-feature</module>
+        <module>aries-feature</module>
         <module>c3p0-feature</module>
+        <module>hibernate-feature</module>
         <module>integration-tests</module>
     </modules>
     <dependencies>

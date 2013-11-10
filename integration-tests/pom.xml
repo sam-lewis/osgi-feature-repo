@@ -10,26 +10,16 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>integration-tests</artifactId>
     <dependencies>
-        <!--<dependency>-->
-            <!--<groupId>${groupId}</groupId>-->
-            <!--<artifactId>hibernate-feature</artifactId>-->
-            <!--<version>${version}</version>-->
-            <!--<type>xml</type>-->
-            <!--<classifier>features</classifier>-->
-            <!--<scope>test</scope>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>${groupId}</groupId>-->
-            <!--<artifactId>c3p0-feature</artifactId>-->
-            <!--<version>${version}</version>-->
-            <!--<type>xml</type>-->
-            <!--<classifier>features</classifier>-->
-            <!--<scope>test</scope>-->
-        <!--</dependency>-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.10</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jpa_2.0_spec</artifactId>
+            <version>1.1</version>
             <scope>test</scope>
         </dependency>
         <dependency>
