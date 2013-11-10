@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features>
+    <feature name="c3p0" version="0.9.5-pre5">
+        <!-- C3P0 does not natively support OSGi, so wrap with BND. -->
+        <!-- TODO: Add imports for other jdbc drivers -->
+        <bundle>wrap:mvn:com.mchange/c3p0/0.9.5-pre5$Bundle-SymbolicName=C3P0&amp;Bundle-Version=0.9.5&amp;Export-Package=*;version=0.9.5&amp;Import-Package=com.mysql.jdbc;resolution:="optional",com.mysql.jdbc.integration.c3p0;resolution:="optional",*</bundle>
+        <bundle>wrap:mvn:com.mchange/mchange-commons-java/0.2.6.2$Bundle-SymbolicName=Mchange-Commons&amp;Bundle-Version=0.2.6&amp;Export-Package=*;version=0.2.6</bundle>
+    </feature>
+</features>
