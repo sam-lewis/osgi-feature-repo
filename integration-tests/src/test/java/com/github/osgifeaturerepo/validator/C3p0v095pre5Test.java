@@ -1,7 +1,13 @@
-package com.github.osgifeaturerepo.c3p0;
+package com.github.osgifeaturerepo.validator;
+
 
 
 public class C3p0v095pre5Test extends FeatureValidator {
+
+    @Override
+    protected String getMavenArtifact() {
+        return "c3p0-feature";
+    }
 
     @Override
     protected String getFeatureName() {

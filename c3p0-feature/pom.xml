@@ -4,20 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>osgi-feature-repo-parent</artifactId>
-        <groupId>com.github.osgi-feature-repo</groupId>
+        <groupId>com.github.osgifeaturerepo</groupId>
         <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>c3p0-feature</artifactId>
-    <packaging>jar</packaging>
     <name>C3P0 Feature</name>
-    <dependencies>
-        <dependency>
-            <groupId>${groupId}</groupId>
-            <artifactId>feature-validator</artifactId>
-            <version>${version}</version>
-        </dependency>
-    </dependencies>
     <build>
         <plugins>
             <plugin>

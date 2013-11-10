@@ -1,4 +1,4 @@
-package com.github.osgifeaturerepo.hibernate;
+package com.github.osgifeaturerepo.validator;
 
 import org.apache.karaf.features.FeaturesService;
 import org.junit.Before;
@@ -14,6 +14,7 @@ import org.osgi.framework.BundleContext;
 
 import javax.inject.Inject;
 import java.io.File;
+import java.net.URI;
 
 import static org.apache.karaf.tooling.exam.options.KarafDistributionOption.karafDistributionConfiguration;
 import static org.apache.karaf.tooling.exam.options.KarafDistributionOption.keepRuntimeFolder;
@@ -40,7 +41,11 @@ public abstract class FeatureValidator {
 
     @Before
     public void setup() throws Exception {
-        featuresService.addRepository(new File("../../src/main/feature/feature.xml").toURI());
+        featuresService.addRepository(new URI(maven("com.github.osgifeaturerepo",
+                getMavenArtifact())
+                .version("1.0")
+                .type("xml")
+                .classifier("features").getURL()));
     }
 
     @Test
@@ -57,9 +62,11 @@ public abstract class FeatureValidator {
         checkNoUnVersionedBundles();
     }
 
-    abstract protected String getFeatureName();
+    protected abstract String getMavenArtifact();
 
-    abstract protected String getFeatureVersion();
+    protected abstract String getFeatureName();
+
+    protected abstract String getFeatureVersion();
 
 
     private void checkNoUnVersionedBundles() {

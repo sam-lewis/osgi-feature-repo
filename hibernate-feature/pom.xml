@@ -4,21 +4,12 @@
 
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.github.osgi-feature-repo</groupId>
+        <groupId>com.github.osgifeaturerepo</groupId>
         <artifactId>osgi-feature-repo-parent</artifactId>
         <version>1.0</version>
     </parent>
     <artifactId>hibernate-feature</artifactId>
-    <packaging>jar</packaging>
     <name>Hibernate Feature</name>
-    <dependencies>
-        <dependency>
-            <groupId>${groupId}</groupId>
-            <artifactId>feature-validator</artifactId>
-            <version>${version}</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
     <build>
         <plugins>
             <plugin>

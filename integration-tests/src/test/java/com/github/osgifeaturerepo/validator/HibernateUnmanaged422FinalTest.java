@@ -1,7 +1,12 @@
-package com.github.osgifeaturerepo.hibernate;
+package com.github.osgifeaturerepo.validator;
 
 
 public class HibernateUnmanaged422FinalTest extends FeatureValidator {
+
+    @Override
+    protected String getMavenArtifact() {
+        return "hibernate-feature";
+    }
 
     @Override
     protected String getFeatureName() {
